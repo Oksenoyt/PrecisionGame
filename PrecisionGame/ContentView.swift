@@ -11,14 +11,19 @@ struct ContentView: View {
     @State private var alertPresented = false
     @State private var targetValue = Int.random(in: 0...100)
     @State var currentValue = 0.0
+    @State var thumbTintOpacity = 0.9 //не смогла передать в цвет бегунка
     
     var body: some View {
-        VStack {
+        VStack(spacing: 30.0) {
             Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
-            Slider(value: $currentValue)
-                .onChange(of: currentValue) { newValue in
-                    currentValue = newValue
+            HStack {
+                Text("0")
+                Slider(value: $currentValue, alphaValue: $thumbTintOpacity)
+                    .onChange(of: currentValue) { newValue in
+                        currentValue = newValue
                 }
+                Text("100")
+            }
             Button("Проверь меня", action: {alertPresented = true})
                 .alert("Wrong Format", isPresented: $alertPresented, actions: {}) {
                     Text(computeScore().formatted())
@@ -31,6 +36,7 @@ struct ContentView: View {
     
     private func computeScore() -> Int {
         let difference = abs(targetValue - lround(currentValue))
+        thumbTintOpacity = Double(difference / 100)
         return 100 - difference
     }
 }

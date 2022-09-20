@@ -11,7 +11,7 @@
 		42D9E58E28D9C15800DBD7CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E58D28D9C15800DBD7CF /* ContentView.swift */; };
 		42D9E59028D9C15A00DBD7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D9E58F28D9C15A00DBD7CF /* Assets.xcassets */; };
 		42D9E59328D9C15A00DBD7CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D9E59228D9C15A00DBD7CF /* Preview Assets.xcassets */; };
-		42D9E59C28D9DC5B00DBD7CF /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E59B28D9DC5B00DBD7CF /* SwiftUIView.swift */; };
+		42D9E59C28D9DC5B00DBD7CF /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E59B28D9DC5B00DBD7CF /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		42D9E58D28D9C15800DBD7CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42D9E58F28D9C15A00DBD7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D9E59228D9C15A00DBD7CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		42D9E59B28D9DC5B00DBD7CF /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		42D9E59B28D9DC5B00DBD7CF /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			children = (
 				42D9E58B28D9C15800DBD7CF /* PrecisionGameApp.swift */,
 				42D9E58D28D9C15800DBD7CF /* ContentView.swift */,
-				42D9E59B28D9DC5B00DBD7CF /* SwiftUIView.swift */,
+				42D9E59B28D9DC5B00DBD7CF /* SliderView.swift */,
 				42D9E58F28D9C15A00DBD7CF /* Assets.xcassets */,
 				42D9E59128D9C15A00DBD7CF /* Preview Content */,
 			);
@@ -142,7 +142,7 @@
 			files = (
 				42D9E58E28D9C15800DBD7CF /* ContentView.swift in Sources */,
 				42D9E58C28D9C15800DBD7CF /* PrecisionGameApp.swift in Sources */,
-				42D9E59C28D9DC5B00DBD7CF /* SwiftUIView.swift in Sources */,
+				42D9E59C28D9DC5B00DBD7CF /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
